@@ -1,8 +1,9 @@
 <div class="left-column accounts">
   <h3>Accounts</h3>
   <ul class='account-list'>
-    <li>My Account - $500</li>
-    <li>My Other Account - $200</li>
+    {{#each}}
+    <li>{{ name }} {{ balance }}</li>
+    {{/each}}
 
   </ul>
 </div>
