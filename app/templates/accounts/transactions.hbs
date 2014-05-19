@@ -16,7 +16,7 @@
           <td>{{transaction.date}}</td>
           <td>{{transaction.description}}</td>
           <td></td>
-          <td>{{transaction.amount}}</td>
+          <td>{{format-money transaction.amount}}</td>
         </tr>
       {{/each}}
     </tbody>
