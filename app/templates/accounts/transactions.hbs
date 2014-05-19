@@ -16,7 +16,7 @@
           <td>{{format-simple-date transaction.date}}</td>
           <td>
           {{#if transaction.isEditing}}
-            {{input value=transaction.description}}
+            {{input value=transaction.description focus-out='stopEditing'}}
           {{else}}
             {{transaction.description}}
           {{/if}}
