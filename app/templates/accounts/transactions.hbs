@@ -13,9 +13,9 @@
     <tbody>
       {{#each transaction in model}}
         <tr>
-          <td>{{transaction.date}}</td>
+          <td>{{format-simple-date transaction.date}}</td>
           <td>{{transaction.description}}</td>
-          <td></td>
+          <td>{{description}}</td>
           <td>{{format-money transaction.amount}}</td>
         </tr>
       {{/each}}
