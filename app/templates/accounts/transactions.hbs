@@ -16,7 +16,7 @@
           <td>{{format-simple-date date}}</td>
           <td>
           {{#if isEditing}}
-            {{input value=description focus-out='stopEditing'}}
+            {{focused-input value=description focus-out='stopEditing'}}
           {{else}}
             {{description}}
           {{/if}}
