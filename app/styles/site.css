@@ -1,0 +1,101 @@
+.header {
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #999999;
+  background-color: #222222;
+  border-color: #080808;
+}
+
+.header .title {
+  padding: 15px 15px;
+}
+
+.content {
+  padding-top: 50px;
+  height: 100%;
+}
+
+.left-column {
+  padding: 5px;
+  background-color: gray;
+  width: 250px;
+  height: 100%;
+  float: left;
+}
+
+.right-column {
+  padding: 5px;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.accounts {
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+
+.account-list {
+  color: #fff;
+}
+
+.account-list li {
+  cursor: pointer;
+  border-bottom: dotted 1px #d3d3d3;
+}
+
+.account-list li .active {
+  color: red;
+}
+
+.transactions {
+  font-size: 15px;
+  line-height: 2em;
+}
+
+.transactions tr td {
+  border: dotted 1px #d3d3d3;
+  text-align: center;
+}
+
+.transactions .transactions-date {
+  width: 150px;
+}
+
+.transactions .transactions-description {
+  width: 200px;
+}
+
+.transactions .transactions-category {
+  width: 150px;
+}
+
+.transactions .transactions-amount {
+  width: 85px;
+}
+
+.transactions thead {
+  background: #ebf1f6;
+  background: -moz-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb));
+  background: -webkit-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+  background: -o-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+  background: -ms-linear-gradient(top, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+  background: linear-gradient(to bottom, #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 );
+}
+
+.transactions thead td {
+  height: 25px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.transactions tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
