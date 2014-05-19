@@ -2,7 +2,7 @@
   <h3>Accounts</h3>
   <ul class='account-list'>
     {{#each}}
-    <li>{{ name }} {{ balance }}</li>
+    {{#link-to 'accounts.transactions' this tag='li'}}{{ name }} {{ balance }}{{/link-to}}
     {{/each}}
 
   </ul>
