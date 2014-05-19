@@ -11,12 +11,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Mon March 15 2014</td>
-        <td>My Transaction</td>
-        <td></td>
-        <td>Amount</td>
-      </tr>
+      {{#each transaction in model}}
+        <tr>
+          <td>{{transaction.date}}</td>
+          <td>{{transaction.description}}</td>
+          <td></td>
+          <td>{{transaction.amount}}</td>
+        </tr>
+      {{/each}}
     </tbody>
   </table>
 </div>
+
+{{ outlet }}
