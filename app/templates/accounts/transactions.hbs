@@ -11,10 +11,16 @@
       </tr>
     </thead>
     <tbody>
-      {{#each transaction in model}}
-        <tr>
+      {{#each transaction in controller}}
+      <tr {{action 'startEditing' controller}}>
           <td>{{format-simple-date transaction.date}}</td>
-          <td>{{transaction.description}}</td>
+          <td>
+          {{#if transaction.isEditing}}
+            {{input value=transaction.description}}
+          {{else}}
+            {{transaction.description}}
+          {{/if}}
+          </td>
           <td>{{description}}</td>
           <td>{{format-money transaction.amount}}</td>
         </tr>
