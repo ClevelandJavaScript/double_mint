@@ -12,9 +12,15 @@
     </thead>
     <tbody>
       {{#each}}
-        <tr>
+        <tr {{action startEditing controller}}>
           <td>{{format-simple-date date}}</td>
-          <td>{{description}}</td>
+          <td>
+          {{#if isEditing}}
+            {{input value=description}}
+          {{else}}
+            {{description}}
+          {{/if}}
+          </td>
           <td></td>
           <td>{{format-money amount}}</td>
         </tr>
