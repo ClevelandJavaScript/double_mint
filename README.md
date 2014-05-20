@@ -7,6 +7,7 @@ Mint clone
 ## Quick Start
 
 * Install nodejs
+* Install Git (bower requires git to be installed and in the path)
 * ```npm install -g grunt-cli```
 * ```npm install -g bower```
 * ```npm install```
